@@ -16,7 +16,7 @@
     "lint:all": "npm run lint:eslint && npm run lint:stylelint"
   },
   "dependencies": {
-    "vue": "^3.2.26"
+    "vue": "^3.2.31"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
@@ -25,8 +25,9 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "@vitejs/plugin-vue": "^2.0.0",
-    "axios": "^0.24.0",
+    "axios": "^0.26.0",
     "consola": "^2.15.3",
+    "cssnano": "^5.0.17",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-define-config": "^1.2.0",
@@ -36,8 +37,13 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
-    "pinia": "^2.0.8",
+    "pinia": "^2.0.11",
+    "postcss-aspect-ratio-mini": "^1.1.0",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-px-to-viewport": "^1.1.1",
     "postcss-pxtorem": "^6.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
     "sass": "^1.45.1",
@@ -46,7 +52,7 @@
     "stylelint-config-standard": "^24.0.0",
     "stylelint-order": "^5.0.0",
     "typescript": "^4.4.4",
-    "vite": "^2.7.10",
+    "vite": "^2.8.4",
     "vite-plugin-html": "^2.1.2",
     "vite-plugin-style-import": "^2.0.0",
     "vue-eslint-parser": "^8.0.1",

@@ -37,6 +37,7 @@
     color: #ffffff;
     text-align: center;
     line-height: 98px;
+    transform: scale(1);
   }
   .info {
     width: 700px;
