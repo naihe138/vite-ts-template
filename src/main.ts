@@ -12,7 +12,7 @@ import App from './App.vue'
 import { setupRouter } from './router'
 
 import '@unocss/reset/tailwind-compat.css'
-import './styles/main.css'
+import './styles/main.scss'
 import 'uno.css'
 
 import 'vant/es/toast/style'

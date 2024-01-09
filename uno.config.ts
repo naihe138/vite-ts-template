@@ -4,7 +4,6 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
 } from 'unocss'
 
 export default defineConfig({
@@ -28,14 +27,13 @@ export default defineConfig({
       },
     }),
     presetTypography(),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        sans: 'Roboto',
-        mono: ['Fira Code'],
-      },
-    }),
   ],
+  // transformers: [
+  //   transformerDirectives({
+  //     applyVariable: ['--chatFlex', '--chatPlayer', '--chatList', '--roleDetail', '--detailPlayer', '--detailList'],
+  //   }),
+  //   transformerVariantGroup(),
+  // ],
   theme: {
     colors: {
       primary: '#34d399',
