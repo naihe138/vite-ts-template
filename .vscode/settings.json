@@ -161,18 +161,13 @@
   "editor.formatOnSave": true,
   // 保存文件的时候的配置
   "editor.codeActionsOnSave": {
-    // 使用Eslint格式化代码
-    "source.fixAll.eslint": true,
-    // 使用stylelint格式化代码
-    "source.fixAll.stylelint": true
-    // "source.organizeImports": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "[vue]": {
     "editor.codeActionsOnSave": {
-      // 使用Eslint格式化代码
-      "source.fixAll.eslint": true,
-      // 使用stylelint格式化代码
-      "source.fixAll.stylelint": true
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
     // "editor.defaultFormatter": "johnsoncodehk.volar"
