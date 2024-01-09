@@ -1,1 +1,2 @@
-// TODO: 按需安装pinia
+export { useAliStore } from './modules/ali'
+export { useUserStore } from './modules/user'

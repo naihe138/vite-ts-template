@@ -1,29 +1,7 @@
-## 安装依赖
-
-```bash
-
-npm install
-
-```
-
 ## 运行项目
 
-```bash
+> node 版本需要到18+
 
+````shell
+# 运行前端
 npm run dev
-
-```
-
-## 安装 husky
-
-```bash
-
-npm run husky
-
-```
-
-## 其他
-
-```js
-npm run build --sit
-```

@@ -1,0 +1,12 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "no-console": "off",
+    "antfu/top-level-function": "off",
+    "vue/comma-dangle": "off",
+    "vue/space-unary-ops": "off",
+    "vue/dot-location": "off",
+    "vue/space-infix-ops": "off",
+    "vue/object-curly-newline": "off"
+  }
+}

@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>nice</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#34d399">
+  <meta name="msapplication-TileColor" content="#34d399">
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      const hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?620839a8edc4355065eebf3e795eaa7f'
+      const s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+  </script>
+</head>
+
+<body class="font-sans" ontouchstart="">
+  <!-- https://vant-ui.github.io/vant/#/en-US/faq#can-t-trigger-the-click-feedback-on-ios -->
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>

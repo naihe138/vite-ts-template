@@ -1,5 +1,14 @@
-node_modules
 .DS_Store
-dist
-dist-ssr
 *.local
+dist
+dev-dist
+dist-ssr
+node_modules
+.idea/
+*.log
+components.d.ts
+/server/logs
+/server/logs/*.log
+/server/logs/*.log.gz
+/server/logs/*-audit.json
+/server/*-audit.json

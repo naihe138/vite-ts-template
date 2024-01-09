@@ -1,16 +1,17 @@
+<script setup lang="ts">
+
+defineOptions({
+  name: 'About',
+})
+
+</script>
+
 <template>
-  <h1 class="about">about</h1>
-  <div class="example"></div>
+  <div overflow-hidden w-screen h-screen>
+    <h2>About</h2>
+    <router-link to="/">go back</router-link>
+  </div>
 </template>
 
-<style lang="scss" scoped>
-  .about {
-    color: red;
-  }
-
-  .example {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-  }
+<style scoped lang="scss">
 </style>
