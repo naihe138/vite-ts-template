@@ -1,6 +1,6 @@
-export const AppName = '星语AI'
-export const AppNameShort = '星语AI'
-export const AppNameDesc = '星语AI'
+export const AppName = '测试'
+export const AppNameShort = '测试'
+export const AppNameDesc = '测试'
 export const AppDescription = '一段珍贵的回忆, 一份独特的情感, 不该因时间流失而被忘却。加入数字生命计划, 上传亲友/自己的影像资料, 在线生成数字形象, 让AI赋能数字生命, 一起探索数字与空间的终极想象力。'
 
 export const FakeAvatars = {
