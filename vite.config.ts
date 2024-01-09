@@ -5,9 +5,9 @@ import Legacy from '@vitejs/plugin-legacy'
 import Vue from '@vitejs/plugin-vue'
 import Inspect from 'vite-plugin-inspect'
 import Components from 'unplugin-vue-components/vite'
-import { VantResolver } from '@vant/auto-import-resolver';
+import { VantResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
-import Unocss from 'unocss/vite'
+import UnoCSS from 'unocss/vite'
 import ViteCompression from 'vite-plugin-compression'
 import dayjs from 'dayjs'
 import { version } from './package.json'
@@ -80,15 +80,15 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             'toRefs',
             'triggerRef',
           ],
-          // '@bryce-loskie/utils': [
-          //   'to',
-          //   'sleep',
-          // ],
-          // '@bryce-loskie/use': [
-          //   'useSideEffects',
-          //   'useCleanup',
-          //   'useModalVisible',
-          // ],
+          '@bryce-loskie/utils': [
+            'to',
+            'sleep',
+          ],
+          '@bryce-loskie/use': [
+            'useSideEffects',
+            'useCleanup',
+            'useModalVisible',
+          ],
         },
       ],
       dts: 'src/auto-imports.d.ts',
@@ -108,7 +108,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    Unocss(),
+    UnoCSS(),
 
   ]
   // app打包不需要zip压缩
