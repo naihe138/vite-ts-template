@@ -4,6 +4,8 @@ import { defineConfig, loadEnv } from 'vite'
 import Legacy from '@vitejs/plugin-legacy'
 import Vue from '@vitejs/plugin-vue'
 import Inspect from 'vite-plugin-inspect'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -41,6 +43,14 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     }),
 
     Inspect(),
+
+    // https://github.com/hannoeru/vite-plugin-pages
+    Pages({
+      extensions: ['vue', 'md'],
+    }),
+
+    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
+    Layouts(),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
@@ -100,7 +110,6 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     UnoCSS(),
-
   ]
   // app打包不需要zip压缩
   if (mode !== 'app') {

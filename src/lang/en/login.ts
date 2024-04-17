@@ -1,5 +1,4 @@
 export default {
-  welcome: 'Welcome to the Digital Life Program',
   codeSent: 'verification code sent',
   phoneNumber: 'phone number',
   phoneNumberError: 'phone number cannot be empty',

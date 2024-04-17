@@ -4,9 +4,7 @@
       <div i-carbon-warning inline-block />
     </div>
 
-    <div>
-      Not Found
-    </div>
+    <RouterView />
 
     <div mt-10>
       <van-button to="/" type="primary" block>
