@@ -1,7 +1,7 @@
 export const AppName = '测试'
 export const AppNameShort = '测试'
 export const AppNameDesc = '测试'
-export const AppDescription = '一段珍贵的回忆, 一份独特的情感, 不该因时间流失而被忘却。加入数字生命计划, 上传亲友/自己的影像资料, 在线生成数字形象, 让AI赋能数字生命, 一起探索数字与空间的终极想象力。'
+export const AppDescription = '在线生成数字形象, 让AI赋能数字生命, 一起探索数字与空间的终极想象力。'
 
 export const FakeAvatars = {
   avatar: 'https://aimental.oss-cn-beijing.aliyuncs.com/20230814/b2bdcdb9502343bf8079006deca8c2d3.webp',

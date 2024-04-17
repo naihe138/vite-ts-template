@@ -1,8 +1,8 @@
+import to from 'await-to-js'
 import type { IAccountPayload, IMobilePayload } from '~/api/user'
 import { userApi } from '~/api/user'
 import { FakeAvatars } from '~/constants'
 import { GenderEnum } from '~/enums'
-import to from 'await-to-js'
 
 interface IUserState {
   token: string | null
