@@ -80,15 +80,6 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             'toRefs',
             'triggerRef',
           ],
-          '@bryce-loskie/utils': [
-            'to',
-            'sleep',
-          ],
-          '@bryce-loskie/use': [
-            'useSideEffects',
-            'useCleanup',
-            'useModalVisible',
-          ],
         },
       ],
       dts: 'src/auto-imports.d.ts',
@@ -124,15 +115,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     },
     server: {
       proxy: {
-        '/internal-api': {
-          target: 'http://localhost:3335',
-          changeOrigin: true,
-          rewrite(path) {
-            return path.replace('/internal-api', '')
-          },
-        },
         '/api': {
-          target: 'https://dlife.qingmeta.cn',
+          target: 'https://xxx.xxx.cn',
           // target: 'https://dlife.world',
           changeOrigin: true,
           rewrite(path) {
@@ -153,9 +137,9 @@ export default defineConfig(({ mode }: ConfigEnv) => {
           drop_debugger: true, // 打包时删除 debugger
           pure_funcs: ['console.log'],
         },
-        // output: {
-        //   comments: false, // 删掉注释
-        // },
+        output: {
+          comments: false, // 删掉注释
+        },
       },
     },
 
