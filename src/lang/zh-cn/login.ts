@@ -1,5 +1,4 @@
 export default {
-  welcome: '欢迎使用数字生命计划',
   codeSent: '验证码已发送',
   phoneNumber: '手机号',
   phoneNumberError: '手机号 不能为空',

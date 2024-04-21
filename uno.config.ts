@@ -4,6 +4,8 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
+  transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
@@ -28,12 +30,12 @@ export default defineConfig({
     }),
     presetTypography(),
   ],
-  // transformers: [
-  //   transformerDirectives({
-  //     applyVariable: ['--chatFlex', '--chatPlayer', '--chatList', '--roleDetail', '--detailPlayer', '--detailList'],
-  //   }),
-  //   transformerVariantGroup(),
-  // ],
+  transformers: [
+    transformerDirectives({
+      applyVariable: ['--chatFlex', '--chatPlayer', '--chatList', '--roleDetail', '--detailPlayer', '--detailList'],
+    }),
+    transformerVariantGroup(),
+  ],
   theme: {
     colors: {
       primary: '#34d399',

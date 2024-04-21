@@ -33,10 +33,10 @@ useHead({
     <div class="van-safe-area-top" />
     <Loading v-if="isRefreshingToken" />
     <router-view v-else v-slot="{ Component }">
-      <keep-alive>
-        <component :is="Component" v-if="$route.meta.keepAlive" :key="$route.name" />
+      <keep-alive v-if="$route.meta.keepAlive">
+        <component :is="Component" :key="$route.name" />
       </keep-alive>
-      <component :is="Component" v-if="!$route.meta.keepAlive" :key="$route.name" />
+      <component :is="Component" v-else :key="$route.name" />
     </router-view>
     <div class="van-safe-area-bottom" />
   </van-config-provider>

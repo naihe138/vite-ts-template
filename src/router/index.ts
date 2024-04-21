@@ -1,32 +1,35 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { setupLayouts } from 'virtual:generated-layouts'
 import type { App } from 'vue'
-import routes from './static'
+import generatedRoutes from '~pages'
 
-const VITE_BASE_LOCAL_URL = import.meta.env.VITE_BASE_LOCAL_URL || '/'
+const routes = setupLayouts(generatedRoutes)
+
 export function setupRouter(app: App) {
+  console.log(routes)
   const router = createRouter({
-    history: createWebHistory(VITE_BASE_LOCAL_URL),
+    history: import.meta.env.MODE === 'app' ? createWebHashHistory() : createWebHistory(import.meta.env.BASE_URL),
     routes,
-    scrollBehavior(_to, _from, savedPosition) {
+    scrollBehavior(to, from, savedPosition) {
       if (savedPosition)
         return savedPosition
+
       return { left: 0, top: 0 }
     },
   })
 
-  router.beforeEach((to, from, next) => {
-    next()
-    // if (ROUTE_WHITE_LIST.includes(to.path) || ROUTE_WHITE_LIST.includes(to.matched[0].path)) {
-    //   next()
-    // }
-    // else {
-    //   const { getToken } = useUserStore()
-    //   if (getToken)
-    //     next()
-    //   else
-    //     next('/')
-    // }
-  })
+  // router.beforeEach((to, from, next) => {
+  //   if (ROUTE_WHITE_LIST.includes(to.path) || ROUTE_WHITE_LIST.includes(to.matched[0].path)) {
+  //     next()
+  //   }
+  //   else {
+  //     const { getToken } = useUserStore()
+  //     if (getToken)
+  //       next()
+  //     else
+  //       next('/')
+  //   }
+  // })
 
   app.use(router)
 

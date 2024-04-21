@@ -3,6 +3,7 @@
  */
 export async function loadFont() {
   try {
+    // https://cdn.jsdelivr.net/gh/blueSky1115/myimage/img/08-42-41-212ada59d62698d65e4c93af599b5fc3-PingFangSC-c1ad84.ttf
     const fontUrl = 'https://static.guygubaby.top/fonts/PingFangSC.ttf'
 
     const raw = await fetch(fontUrl, {

@@ -6,5 +6,4 @@ interface Window {
    */
   hydrate: (hydration: any) => void
   loadLangHandle: any
-  Pdfh5: any
 }
