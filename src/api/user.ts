@@ -46,8 +46,7 @@ export const userApi = {
   login(payload: IAccountPayload) {
     return http.post('/aid/sys/login', payload)
   },
-  getAigcToken(payload: { 'appCode': string
-    'appSecret': string }) {
+  getAigcToken(payload: { appCode: string    'appSecret': string }) {
     return http.post('/aigc/auth', payload)
   },
   loginViaMobile(payload: IMobilePayload) {

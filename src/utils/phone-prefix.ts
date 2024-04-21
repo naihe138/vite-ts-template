@@ -2,13 +2,13 @@ import axios from 'axios'
 import { getBrowserLang } from './tools'
 
 interface IPhoneItem {
-  'phone': string
-  'nameCn': string
-  'nameEn': string
+  phone: string
+  nameCn: string
+  nameEn: string
 }
 
 export type TIPhoneItem = Record<string, IPhoneItem>
-export type IPhoneColumn = { text: string; value: string }[]
+export type IPhoneColumn = { text: string, value: string }[]
 const { isEnglish } = getBrowserLang()
 let cacheColumns: IPhoneColumn = null as any
 let cachePhonePrefixData: TIPhoneItem = null as any

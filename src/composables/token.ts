@@ -1,4 +1,4 @@
-import {  showLoadingToast } from 'vant'
+import { showLoadingToast } from 'vant'
 import { useUserStore } from '~/store'
 
 export function useAutoRefreshToken() {

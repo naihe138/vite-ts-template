@@ -33,7 +33,7 @@ function errorHandler(error: AxiosError<{ message: string }>) {
 requestInstance.interceptors.request.use((config) => {
   const userStore = useUserStore()
   const token = userStore.getToken
-  const header = (config.headers as any)
+  const header = config.headers as any
   if (config.headers && token)
     header.token = token
   header['aigc-token'] = userStore.getAigcToken || ''

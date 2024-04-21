@@ -13,7 +13,7 @@ export const transformSize = (size: number) => {
 const VITE_LANG = import.meta.env.VITE_LANG
 
 export type TLanguage = 'zh-cn' | 'en'
-export const getBrowserLang = (): { language: TLanguage; isEnglish: boolean } => {
+export const getBrowserLang = (): { language: TLanguage, isEnglish: boolean } => {
   const storeLang = localStorage.getItem('my-language')
   let isEnglish = storeLang === 'en'
   if (storeLang === 'zh-cn' || storeLang === 'en')
